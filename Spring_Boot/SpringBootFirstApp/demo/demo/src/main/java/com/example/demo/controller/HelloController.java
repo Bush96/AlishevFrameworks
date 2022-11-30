@@ -1,0 +1,16 @@
+package com.example.demo.controller;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Controller
+public class HelloController {
+//    @Value("${hi}")
+//    private String hi;
+    @GetMapping("/hello")
+    public String hello(){
+//        System.out.println(this.hi);
+        return "hello";
+    }
+}
